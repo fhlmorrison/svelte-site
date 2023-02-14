@@ -26,7 +26,6 @@
         display: grid;
         grid-template: 1 / 1;
         top: 0;
-        outline: black solid 1px;
         width: calc(3 * var(--logo-height));
         padding-left: calc(1 * var(--logo-height));
         transition: width 1s ease-in-out;
