@@ -1,6 +1,8 @@
 <script lang="ts">
+  import Social from "./lib/Social.svelte";
   import Counter from "./lib/Counter.svelte";
   import NameLogo from "./lib/NameLogo.svelte";
+  import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
 </script>
 
 <div class="header">
@@ -27,6 +29,10 @@
   </p>
 
   <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+
+  <Social href="https://github.com/fhlmorrison" text="fhlmorrison">
+    <DiGithubBadge />
+  </Social>
 </main>
 
 <style>
