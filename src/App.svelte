@@ -1,6 +1,5 @@
 <script lang="ts">
   import Social from "./lib/Social.svelte";
-  import Counter from "./lib/Counter.svelte";
   import NameLogo from "./lib/NameLogo.svelte";
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
 </script>
@@ -16,9 +15,7 @@
   </div>
   <h1>Vite + Svelte</h1>
 
-  <div class="card">
-    <Counter />
-  </div>
+  <div class="card">card placeholder</div>
 
   <p>
     Check out <a
