@@ -19,7 +19,7 @@
 
   <p>Check out ____</p>
 
-  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+  <p class="read-the-docs">Light text placeholder</p>
 
   <Social href="https://github.com/fhlmorrison" text="fhlmorrison">
     <DiGithubBadge />
