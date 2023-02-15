@@ -4,7 +4,7 @@
 </script>
 
 <div class="header">
-  <NameLogo size=2.5/>
+  <NameLogo size="2.5" />
 </div>
 <main>
   <div>

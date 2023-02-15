@@ -2,7 +2,7 @@
     import fLogo from "../assets/F.svg";
     import fArmLogo from "../assets/F-arm.svg";
     import mLogo from "../assets/M.svg";
-    export let size: string = '1';
+    export let size: string = "1";
 </script>
 
 <a href="/" target="_self" class="logobox" style="--logo-height:{`${size}rem`}">
@@ -41,10 +41,10 @@
     /**Animations*/
     .logobox:hover .nameText {
         transition: width 1s ease-in-out 0.5s;
-        width: calc( 6 * var(--logo-height));
+        width: calc(6 * var(--logo-height));
     }
     .logobox:hover .M {
-        transform: translate(calc(7* var(--logo-height)), 0);
+        transform: translate(calc(7 * var(--logo-height)), 0);
         transition: 1s ease-in-out;
     }
     .nameText {
