@@ -1,7 +1,8 @@
 <script lang="ts">
   import Social from "./lib/Social.svelte";
   import NameLogo from "./lib/NameLogo.svelte";
-  import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
+  import FaGithub from "svelte-icons/fa/FaGithub.svelte";
+  import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
 </script>
 
 <div class="header">
@@ -22,7 +23,13 @@
   <p class="read-the-docs">Light text placeholder</p>
 
   <Social href="https://github.com/fhlmorrison" text="fhlmorrison">
-    <DiGithubBadge />
+    <FaGithub />
+  </Social>
+  <Social
+    href="https://www.linkedin.com/in/fhlmorrison/"
+    text="Fraser Morrison"
+  >
+    <FaLinkedin />
   </Social>
 </main>
 
