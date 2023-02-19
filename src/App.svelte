@@ -56,4 +56,7 @@
     display: flex;
     justify-content: center;
   }
+  main {
+    margin-top: calc(2 * 2.5vw - 28px);
+  }
 </style>
