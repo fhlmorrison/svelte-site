@@ -5,13 +5,19 @@
         PerspectiveCamera,
         AmbientLight,
     } from "@threlte/core";
-    import { spring } from "svelte/motion";
     import { GLTF } from "@threlte/extras";
+    import {
+        validate_component,
+        validate_void_dynamic_element,
+    } from "svelte/internal";
     import type { Robot } from "./types";
 
-    const scale = spring(1);
-
     export let robot: Robot;
+    let loaded = true;
+    const setLoading = (val) => {
+        loaded = val;
+    };
+    $: setLoading(!robot);
 </script>
 
 <div>
@@ -22,8 +28,13 @@
 
         <AmbientLight />
 
-        <GLTF url={robot.url} useDraco />
+        <GLTF url={robot.url} useDraco on:load={() => (loaded = true)} />
     </Canvas>
+    {#if !loaded}
+        <span>Loading...</span>
+    {:else}
+        <span>{robot.name}</span>
+    {/if}
 </div>
 
 <style>

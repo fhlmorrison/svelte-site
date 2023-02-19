@@ -1,11 +1,7 @@
 <script lang="ts">
     import type { Robot } from "./types";
     export let robotList: Robot[];
-    let robot = robotList[0];
-    export let onUpdate: (selected: Robot) => void = (robot) => {
-        console.log(`Robot: "${robot.name}" Selected`);
-    };
-    $: onUpdate(robot);
+    export let robot = robotList[0];
 </script>
 
 <select bind:value={robot}>

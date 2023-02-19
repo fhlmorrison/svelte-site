@@ -10,13 +10,11 @@
         { name: "2020", url: "src/assets/2020_Compressed.draco.glb" },
     ];
     let robot;
-    let onUpdate = (selected: Robot) => {
-        robot = selected;
-    };
 </script>
 
 <div>
     <div>Select a robot to view</div>
-    <RobotSelector {robotList} {onUpdate} />
+    <RobotSelector {robotList} bind:robot />
+
     <RobotScene {robot} />
 </div>
