@@ -5,7 +5,7 @@
     export let size: string = "1";
 </script>
 
-<a href="/" target="_self" class="logobox" style="--logo-height:{`${size}rem`}">
+<a href="/" target="_self" class="logobox" style="--logo-height:{`${size}vw`}">
     <div class="logo F">
         <img src={fLogo} alt="F Logo" />
         <div class="nameText">raser</div>
