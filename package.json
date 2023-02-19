@@ -12,6 +12,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@threlte/core": "^5.0.9",
+    "@threlte/extras": "^4.9.3",
     "@threlte/preprocess": "^0.0.2",
     "@tsconfig/svelte": "^3.0.0",
     "@types/three": "^0.149.0",

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import RobotViewer from "./lib/RobotViewer/RobotViewer.svelte";
   import Social from "./lib/Social.svelte";
   import NameLogo from "./lib/NameLogo.svelte";
   import FaGithub from "svelte-icons/fa/FaGithub.svelte";
@@ -9,6 +10,7 @@
   <NameLogo size="2.5" />
 </div>
 <main>
+  <RobotViewer />
   <div>
     <a href="/" target="_self">
       <img src="/FM.svg" class="logo" alt="FM Logo" />
