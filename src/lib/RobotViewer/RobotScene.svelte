@@ -6,10 +6,6 @@
         AmbientLight,
     } from "@threlte/core";
     import { GLTF } from "@threlte/extras";
-    import {
-        validate_component,
-        validate_void_dynamic_element,
-    } from "svelte/internal";
     import type { Robot } from "./types";
 
     export let robot: Robot;
@@ -33,7 +29,7 @@
     {#if !loaded}
         <span>Loading...</span>
     {:else}
-        <span>{robot.name}</span>
+        <span>{robot && robot.name}</span>
     {/if}
 </div>
 
