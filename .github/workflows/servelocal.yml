@@ -1,6 +1,9 @@
 name: Deploy site to home server
 
 on:
+  push:
+    branches:
+    - 'main'
   workflow_dispatch:
 
 jobs:
