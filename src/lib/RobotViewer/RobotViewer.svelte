@@ -5,9 +5,9 @@
     const robotList: Robot[] = [
         {
             name: "RoadRunner",
-            url: "src/assets/RoadRunner_Compressed.draco.glb",
+            url: "/models/RoadRunner_Compressed.draco.glb",
         },
-        { name: "2020", url: "src/assets/2020_Compressed.draco.glb" },
+        { name: "2020", url: "/models/2020_Compressed.draco.glb" },
     ];
     let robot;
 </script>
